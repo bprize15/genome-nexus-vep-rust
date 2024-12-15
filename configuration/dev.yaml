@@ -1,0 +1,8 @@
+application:
+  port: 3001
+  host: localhost
+vep:
+  port: 0
+  host: test
+  username: test
+  password: test

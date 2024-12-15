@@ -1,0 +1,12 @@
+[package]
+name = "genome-nexus-vep-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7.9"
+config = "0.14.1"
+secrecy = {version = "0.10.3", features = ["serde"]}
+serde = "1.0.216"
+serde_json = "1.0.133"
+tokio = {version = "1.42.0", features = ["full"]}
