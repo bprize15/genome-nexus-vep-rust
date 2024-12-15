@@ -2,7 +2,7 @@
 set -e
 
 if [ $# -lt 1 ]; then
-    echo "Usage: $0 TAG"
+    echo "Usage: $0 <tag>"
     exit 1
 fi
 
@@ -32,4 +32,4 @@ EOF
 
 echo 
 echo "VEP running in container '${CONTAINER_NAME}' and is accessible from the scripts directory."
-echo "Use ./vep --help to get started" 
+echo "Use ./scripts/vep --help to get started" 
