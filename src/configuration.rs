@@ -12,12 +12,13 @@ pub struct ApplicationSettings {
     pub host: String,
 }
 
-#[derive(serde::Deserialize)]
+#[derive(serde::Deserialize, Clone)]
 pub struct VepSettings {
     pub port: u16,
     pub host: String,
     pub username: String,
-    pub password: SecretString
+    pub password: SecretString,
+    pub forks: u16,
 }
 
 pub enum Environment {

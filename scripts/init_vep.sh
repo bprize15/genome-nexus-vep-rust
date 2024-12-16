@@ -24,10 +24,7 @@ cat > ./scripts/vep.sh << EOF
 
 # This script is generated automatically by init_vep.sh - do not modify
 
-docker exec ${CONTAINER_NAME} vep "\$@" || {
-    echo "Command failed. Try running './scripts/init-vep.sh' to create the container or 'docker container start $CONTAINER_NAME' if it is stopped."
-    exit 1
-}
+docker exec ${CONTAINER_NAME} vep "\$@"
 EOF
 
 echo 
